@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_menu</class>
+ <widget class="QWidget" name="add_menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>269</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>add_menu</string>
+  </property>
+  <widget class="QLabel" name="Welcome_Label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700; color:#0974ae;&quot;&gt;请选择添加方式&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="Return_Login_Button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0076b4;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 600 10pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>添加已有账号的游客</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Return_Login_Button_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>130</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0076b4;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 600 10pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>为新游客注册并添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Return_Login_Button_3">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>200</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0076b4;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 600 10pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>取消添加</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(最多可添加三位游客)</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>Welcome_Label</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Return_Login_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>add_menu</receiver>
+   <slot>on_add_old_Button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>665</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Return_Login_Button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>add_menu</receiver>
+   <slot>on_add_new_Button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>410</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Return_Login_Button_3</sender>
+   <signal>clicked()</signal>
+   <receiver>add_menu</receiver>
+   <slot>on_Exit_Button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>771</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_add_old_Button_clicked()</slot>
+  <slot>on_add_new_Button_clicked()</slot>
+  <slot>on_Exit_Button_clicked()</slot>
+ </slots>
+</ui>

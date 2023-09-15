@@ -1,0 +1,5 @@
+"D:\Program Files\Jetbrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Program Files/Jetbrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\16531\Documents\ProgrammDesign -B D:\16531\Documents\ProgrammDesign\cmake-build-debug-qt
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt

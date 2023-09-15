@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/ProgrammDesign_autogen",
+	"CMAKE_BINARY_DIR" : "D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/16531/Documents/ProgrammDesign",
+	"CMAKE_SOURCE_DIR" : "D:/16531/Documents/ProgrammDesign",
+	"INCLUDE_DIR" : "D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/ProgrammDesign_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/16531/Documents/ProgrammDesign/Resourse Files/image/register.png",
+		"D:/16531/Documents/ProgrammDesign/Resourse Files/image/recover.png",
+		"D:/16531/Documents/ProgrammDesign/Resourse Files/image/admin.png",
+		"D:/16531/Documents/ProgrammDesign/Resourse Files/image/login.png"
+	],
+	"LOCK_FILE" : "D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/ProgrammDesign_autogen.dir/AutoRcc_image_J4MBHJQJ4N_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "image" ],
+	"OUTPUT_CHECKSUM" : "J4MBHJQJ4N",
+	"OUTPUT_NAME" : "qrc_image.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/6.5.0/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/ProgrammDesign_autogen.dir/AutoRcc_image_J4MBHJQJ4N_Used.txt",
+	"SOURCE" : "D:/16531/Documents/ProgrammDesign/Resourse Files/image.qrc",
+	"VERBOSITY" : 0
+}

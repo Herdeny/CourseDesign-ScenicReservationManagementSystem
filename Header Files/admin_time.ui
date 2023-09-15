@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>admin_time</class>
+ <widget class="QWidget" name="admin_time">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>949</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>admin_time</string>
+  </property>
+  <widget class="QFrame" name="LoginMenu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>951</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="Welcome_Label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700; color:#0974ae;&quot;&gt;请选择管理时段&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Close_Button">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-style:outset;
+background-color: rgba(255, 255, 255, 0);
+border-radius:0px
+}
+
+QPushButton:hover{ 
+	background-color: rgb(255, 0, 0);
+}
+ 
+QPushButton:pressed{
+	background-color: rgb(220,92,102);
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Hide_Button">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-style:outset;
+background-color: rgba(255, 255, 255, 0);
+border-radius:0px
+}
+
+QPushButton:hover{ 
+	background-color: rgb(239, 231, 231);
+}
+ 
+QPushButton:pressed{
+	background-color: rgb(243,234,234);
+}</string>
+    </property>
+    <property name="text">
+     <string>—</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit_Button">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>520</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0076b4;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 600 10pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>取消预约</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>811</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit_Button_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>520</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #0076b4;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 600 10pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>选择时段</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>calendarWidget</sender>
+   <signal>activated(QDate)</signal>
+   <receiver>admin_time</receiver>
+   <slot>on_Date_Choosed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>517</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1201</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Close_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>admin_time</receiver>
+   <slot>on_Close_Button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>939</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1020</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Hide_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>admin_time</receiver>
+   <slot>on_Close_Button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>897</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>995</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Exit_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>admin_time</receiver>
+   <slot>on_Exit_Button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>629</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Exit_Button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>admin_time</receiver>
+   <slot>on_Date_Choosed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1157</x>
+     <y>636</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_Choose_Time_Button_clicked()</slot>
+  <slot>on_Exit_Button_clicked()</slot>
+  <slot>on_Date_Choosed()</slot>
+  <slot>on_Hide_Button_clicked()</slot>
+  <slot>on_Close_Button_clicked()</slot>
+  <slot>on_All_Button_clicked()</slot>
+ </slots>
+</ui>

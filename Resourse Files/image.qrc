@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>image/login.png</file>
+        <file>image/admin.png</file>
+        <file>image/recover.png</file>
+        <file>image/register.png</file>
+    </qresource>
+</RCC>

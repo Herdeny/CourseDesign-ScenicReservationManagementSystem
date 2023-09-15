@@ -1,0 +1,5 @@
+D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/ProgrammDesign.dir
+D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/edit_cache.dir
+D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/rebuild_cache.dir
+D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/ProgrammDesign_autogen_timestamp_deps.dir
+D:/16531/Documents/ProgrammDesign/cmake-build-debug-qt/CMakeFiles/ProgrammDesign_autogen.dir
